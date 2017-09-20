@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'mixins';
+
+/* 
+                Common
+                                       */
+
+html {
+  font-size: $root-fs-sm;
+
+  @include tablet {
+    font-size: $root-fs;
+  }
+}
+
+body {
+  background-color: $bg-color;
+  font-family: $main-ff;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; }
+
+h1, h2 {
+  font-family: $serif-ff;
+  font-size: $title-fs/1.25;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  max-width: 25rem;
+
+  @include tablet {
+    font-size: $title-fs;
+    max-width: 33rem;
+  }
+}

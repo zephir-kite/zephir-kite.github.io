@@ -1,0 +1,49 @@
+@import 'variables';
+@import 'mixins';
+
+/* 
+                Footer
+                                       */
+
+.footer {
+  background: url(../images/pattern.png);
+  padding-top: 7rem;
+  z-index: 10;
+  position: relative;
+
+  &__links {
+    margin-top: 7rem;
+    padding-bottom: 0.5rem;
+    font-size: $content-fs;
+
+    a {
+      color: white;
+    }
+  }
+
+  &__brand {
+    color: white;
+    font-size: $subtitle-fs/1.25;
+    font-weight: bold;
+    letter-spacing: -0.025rem;
+
+    // &:before {
+    //   content: url(../images/logo-white.svg);
+    //   height: 20px;
+    //   width: 20px;
+    //   margin-right: 8px;
+    //   position: relative;
+    //   top: 3px;
+    // }
+  }
+
+  .sign-up:after {
+    box-shadow: 0 0 65px 0 #37C7BA;
+    border-radius: 5px;
+    height: 90%;
+    left: 2.5%;
+    top: 5%;
+    width: 95%;
+    z-index: -1;
+  }
+}

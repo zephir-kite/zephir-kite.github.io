@@ -1,0 +1,160 @@
+@import 'variables';
+@import 'mixins';
+
+/* 
+                Utils
+                                       */
+
+.u {
+
+  &__flex {
+    display: flex;
+
+    &--space {
+      justify-content: space-between;
+    }
+
+    &--bottom {
+      align-self: flex-end;
+    }
+  }
+
+  &__z {
+    &--1 {
+      z-index: 1;
+    }
+
+    &--2 {
+      z-index: 2;
+    }
+
+    &--3 {
+      z-index: 3;
+    }
+  }
+
+  &__pos {
+    &--static {
+      position: static !important;
+    }
+
+    &--rel {
+      position: relative !important;
+    }
+  }
+
+  &__wrapper {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+
+    &--large {
+      max-width: 65rem;
+    }
+
+    @include tablet {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__white {
+    color: $white;
+
+    p {
+      color: $white-light;
+    }
+  }
+
+  &__primary {
+    color: $primary-color; 
+    
+    p {
+      color: $primary-color-light;
+    }
+
+    h1, h2 {
+      color: $primary-color-darker;
+    }
+  }
+
+  &__bg {
+    &--white { background-color: $white; }
+    &--primary { background-color: $bg-color; }
+  }
+
+  &__skew {
+    transform: skewY(-7deg);
+
+    &--translate {
+      transform: skewY(-7deg) translateY(-5rem);
+    }
+  }
+
+  &__translate {
+    &--100 {
+      transform: translateY(-100%);
+    }
+
+    &--5 {
+      transform: translateY(-5rem);
+    }
+  }
+
+  &__skew-child {
+    transform: skewY(7deg);
+  }
+
+  &__box-shadow {
+    box-shadow: rgba(2, 30, 52, 0.15) 0 0 20px 4px;
+  }
+
+  &__pr {
+    &--10 {
+      padding-right: 1rem;
+    }
+  }
+
+  &__pb {
+    &--45 {
+      padding-bottom: 4.5rem !important;
+    }
+  }
+
+  &__pt {
+    &--50 {
+      padding-top: 5rem;
+    }
+    &--75 {
+      padding-top: 7.5rem;
+    }
+  }
+
+  &__mt {
+    &---100 {
+      margin-top: -10rem;
+    }
+  }
+
+  &__mb {
+    &---75 { margin-bottom: -7.5rem; }
+    &---45 { margin-bottom: -4.5rem; }
+    &---12 { margin-bottom: -1.2rem; }
+  }
+
+  &__skew-overlay {
+    &:before {
+      content: "";
+      height: 7.5rem;
+      transform: skewY(-7deg);
+      background: $white;
+      display: block;
+      z-index: 3;
+      margin-top: -2.5rem;
+    }
+  }
+
+}

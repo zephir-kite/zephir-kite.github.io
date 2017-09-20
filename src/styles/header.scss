@@ -1,0 +1,97 @@
+@import 'variables';
+@import 'mixins';
+
+/* 
+                  Header
+                                       */
+
+.header {
+    
+  @include linear-gradient('to bottom left', $primary-color, $primary-color-dark);
+  overflow: hidden;
+  padding-top: 2rem;
+  
+  &__title {
+    margin-top: 18rem;
+    margin-bottom: 4rem;
+
+    @include tablet {
+      margin-top: 9rem;
+      margin-bottom: 9rem;
+    }
+  }
+  
+  #sun {
+    position: absolute;
+    top: -9.5rem;
+    right: -2.5rem;
+
+    @include tablet {
+      top: 4.5rem;
+      right: 0;
+    }
+  }
+
+  #kite {
+    animation: fly 6s infinite ease-in-out;
+    position: absolute;
+    right: 4rem;
+    transform-origin: bottom left;
+    top: 7rem;
+
+    @include tablet {
+      right: 250px;
+      top: 12rem;
+    }
+  }
+
+  #dunes {
+    transform: translateX(-32.5%);
+    width: 750px;
+    margin-bottom: -4px;
+
+    @include tablet {
+      width: auto;
+    }
+  }
+
+  @keyframes fly {
+    0% { transform: rotate(0) translateY(0); }
+    50% { transform: rotate(-5deg) translateY(-1em); }
+    100% { transform: rotate(0) translateY(0); }
+  }
+
+  &__links {
+    display: none;
+    
+    @include tablet {
+      display: inherit;
+    }
+
+    a {
+      color: white;
+      font-size: $content-fs;
+
+      & + a {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+  &__brand {
+    color: white;
+    font-size: $subtitle-fs;
+    font-weight: bold;
+    letter-spacing: -0.025rem;
+
+    &:before {
+      content: url(../images/logo-white.svg);
+      height: 24px;
+      width: 24px;
+      margin-right: 8px;
+      position: relative;
+      top: 3px;
+    }
+  }
+
+}
