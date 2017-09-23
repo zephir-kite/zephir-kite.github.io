@@ -136,6 +136,9 @@ table {
 .u__mt---100 {
   margin-top: -10rem; }
 
+.u__mt--60 {
+  margin-top: 6rem; }
+
 .u__mb---75 {
   margin-bottom: -7.5rem; }
 
@@ -285,6 +288,7 @@ h1, h2 {
   border-radius: 5px;
   color: white;
   margin: auto;
+  padding-bottom: .1rem;
   position: absolute;
   right: 0;
   text-align: center;
@@ -304,7 +308,7 @@ h1, h2 {
     font-size: 1.8rem;
     font-weight: bold;
     margin: 0;
-    padding-top: 30px; }
+    padding-top: 1rem; }
   .sign-up h3:after {
     background-color: white;
     border-radius: 6px;
@@ -317,37 +321,6 @@ h1, h2 {
     color: #fafafa;
     font-size: 1.25rem;
     font-weight: 500; }
-  .sign-up input {
-    border: none;
-    border-radius: 4px;
-    color: rgba(155, 155, 155, 0.5);
-    font-family: "Cabin", sans-serif;
-    font-size: 1.25rem;
-    margin: 15px auto 10px;
-    padding: 10px 8px;
-    width: 25rem; }
-  .sign-up ::-webkit-input-placeholder {
-    color: rgba(155, 155, 155, 0.5); }
-  .sign-up :-moz-placeholder {
-    color: rgba(155, 155, 155, 0.5); }
-  .sign-up ::-moz-placeholder {
-    color: rgba(155, 155, 155, 0.5); }
-  .sign-up :-ms-input-placeholder {
-    color: rgba(155, 155, 155, 0.5); }
-  .sign-up ::-ms-input-placeholder {
-    color: rgba(155, 155, 155, 0.5); }
-  .sign-up button {
-    background-color: #2FC7C2;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    font-family: "Cabin", sans-serif;
-    font-size: 1.25rem;
-    margin: 19px auto 10px;
-    padding: 6px 8px;
-    position: absolute;
-    right: 12px; }
 
 .features {
   padding: 7.5rem 0; }
@@ -363,8 +336,8 @@ h1, h2 {
     width: 24rem; }
     .features__find-in-seconds--img {
       position: absolute;
-      top: -9rem;
-      width: 24rem; }
+      top: -5rem;
+      width: 26rem; }
     .features__find-in-seconds--bg {
       margin-left: -5rem;
       margin-bottom: -7.5rem;
@@ -377,42 +350,45 @@ h1, h2 {
   .features__plan-your-session {
     top: -1rem;
     position: relative; }
-
-.early-access {
-  margin-top: 6rem; }
-  .early-access input {
-    background: #fafafa;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px 0 rgba(157, 159, 162, 0.25);
-    color: #9D9FA2;
-    font-family: "Cabin", sans-serif;
-    font-size: 1.25rem;
-    padding: .65rem 1rem;
-    min-width: 20rem;
-    margin-right: 1rem; }
-    .early-access input::-webkit-input-placeholder {
-      color: #9D9FA2; }
-    .early-access input::-moz-placeholder {
-      color: #9D9FA2; }
-    .early-access input:-ms-input-placeholder {
-      color: #9D9FA2; }
-    .early-access input::placeholder {
-      color: #9D9FA2; }
-  .early-access .input--light-blue {
-    box-shadow: 0 4px 15px 0 rgba(48, 125, 240, 0.25); }
-  .early-access button {
+  .features__add-to-messenger {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #43C6AC;
-    box-shadow: 0 4px 15px 0 #43C6AC;
+    box-shadow: 0 4px 15px 0 #43c6ac;
     border: none;
-    border-radius: 12px;
+    border-radius: 5px;
     color: #fafafa;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-size: 1.25rem;
     font-family: "Cabin", sans-serif;
-    padding: .65rem 1rem;
-    cursor: pointer; }
-  .early-access .button--light-green {
-    box-shadow: 0 4px 15px 0 rgba(59, 174, 151, 0.5); }
+    padding: .65rem 1.25rem;
+    transition: all .2s ease; }
+    .features__add-to-messenger:hover {
+      box-shadow: 0 6px 15px 2px rgba(67, 198, 172, 0.7);
+      -webkit-transform: translateY(-1px);
+              transform: translateY(-1px); }
+    .features__add-to-messenger--light-green {
+      box-shadow: 0 4px 15px 0 #329480; }
+      .features__add-to-messenger--light-green:hover {
+        box-shadow: 0 6px 15px 2px rgba(50, 148, 128, 0.5); }
+    .features__add-to-messenger--inverse {
+      background-color: #fafafa;
+      color: #43C6AC;
+      margin: 1.25rem auto 1rem;
+      padding: .5rem 1.25rem;
+      box-shadow: 0 4px 15px 0 #3BAD97; }
+      .features__add-to-messenger--inverse:hover {
+        box-shadow: 0 6px 15px 2px #3BAD97; }
+  .features__messenger-icon {
+    content: url(../images/messenger.svg);
+    height: 1.75rem;
+    margin-right: .75rem; }
+    .features__messenger-icon--inverse {
+      content: url(../images/messenger-inv.svg); }
 
 /* texts */
 /* colors */
@@ -432,7 +408,6 @@ h1, h2 {
       color: white; }
   .footer__brand {
     color: white;
-    font-size: 1.44rem;
     font-weight: bold;
     letter-spacing: -0.025rem; }
   .footer .sign-up:after {
