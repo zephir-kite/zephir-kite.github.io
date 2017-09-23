@@ -16,8 +16,20 @@
     margin-bottom: 4rem;
 
     @include tablet {
-      margin-top: 9rem;
-      margin-bottom: 9rem;
+      margin-top: 8rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: $content-fs;
+    font-family: $main-ff;
+    font-weight: normal;
+
+    @include tablet {
+      visibility: hidden;
+      margin-bottom: 3rem;
+      max-width: 27rem;
     }
   }
   

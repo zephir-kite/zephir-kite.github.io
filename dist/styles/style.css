@@ -203,8 +203,17 @@ h1, h2 {
     margin-bottom: 4rem; }
     @media (min-width: 768px) {
       .header__title {
-        margin-top: 9rem;
-        margin-bottom: 9rem; } }
+        margin-top: 8rem;
+        margin-bottom: 1.5rem; } }
+  .header__subtitle {
+    font-size: 1.25rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: normal; }
+    @media (min-width: 768px) {
+      .header__subtitle {
+        visibility: hidden;
+        margin-bottom: 3rem;
+        max-width: 27rem; } }
   .header #sun {
     position: absolute;
     top: -9.5rem;
