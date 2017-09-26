@@ -40,6 +40,10 @@ table {
 /* 
                 Utils
                                        */
+@media (max-width: 768px) {
+  .u__hide-mobile {
+    display: none !important; } }
+
 .u__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,6 +72,7 @@ table {
   position: relative !important; }
 
 .u__wrapper {
+  display: block;
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
@@ -99,12 +104,13 @@ table {
 .u__bg--primary {
   background-color: #181554; }
 
-.u__skew {
-  -webkit-transform: skewY(-7deg);
-          transform: skewY(-7deg); }
-  .u__skew--translate {
-    -webkit-transform: skewY(-7deg) translateY(-5rem);
-            transform: skewY(-7deg) translateY(-5rem); }
+@media (min-width: 768px) {
+  .u__skew {
+    -webkit-transform: skewY(-7deg);
+            transform: skewY(-7deg); }
+    .u__skew--translate {
+      -webkit-transform: skewY(-7deg) translateY(-5rem);
+              transform: skewY(-7deg) translateY(-5rem); } }
 
 .u__translate--100 {
   -webkit-transform: translateY(-100%);
@@ -114,9 +120,10 @@ table {
   -webkit-transform: translateY(-5rem);
           transform: translateY(-5rem); }
 
-.u__skew-child {
-  -webkit-transform: skewY(7deg);
-          transform: skewY(7deg); }
+@media (min-width: 768px) {
+  .u__skew-child {
+    -webkit-transform: skewY(7deg);
+            transform: skewY(7deg); } }
 
 .u__box-shadow {
   box-shadow: rgba(2, 30, 52, 0.15) 0 0 20px 4px; }
@@ -200,17 +207,19 @@ h1, h2 {
   padding-top: 2rem; }
   .header__title {
     margin-top: 18rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 0rem; }
     @media (min-width: 768px) {
       .header__title {
         margin-top: 8rem;
         margin-bottom: 1.5rem; } }
   .header__subtitle {
+    display: none;
     font-size: 1.25rem;
     font-family: "Cabin", sans-serif;
     font-weight: normal; }
     @media (min-width: 768px) {
       .header__subtitle {
+        display: block;
         visibility: hidden;
         margin-bottom: 3rem;
         max-width: 27rem; } }
@@ -238,10 +247,11 @@ h1, h2 {
     -webkit-transform: translateX(-32.5%);
             transform: translateX(-32.5%);
     width: 750px;
-    margin-bottom: -4px; }
+    margin-bottom: -40px; }
     @media (min-width: 768px) {
       .header #dunes {
-        width: auto; } }
+        width: auto;
+        margin-bottom: -4px; } }
 
 @-webkit-keyframes fly {
   0% {
@@ -332,7 +342,8 @@ h1, h2 {
     font-weight: 500; }
 
 .features {
-  padding: 7.5rem 0; }
+  padding: 5rem 0;
+  position: relative; }
   .features h2 {
     max-width: 35rem; }
   .features p {
@@ -350,7 +361,8 @@ h1, h2 {
     .features__find-in-seconds--bg {
       margin-left: -5rem;
       margin-bottom: -7.5rem;
-      width: 33rem; }
+      width: 33rem;
+      opacity: .3; }
   .features__get-notified {
     width: 24rem;
     top: -7rem;
@@ -368,10 +380,9 @@ h1, h2 {
     border: none;
     border-radius: 5px;
     color: #fafafa;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     font-size: 1.25rem;
     font-family: "Cabin", sans-serif;
     padding: .65rem 1.25rem;

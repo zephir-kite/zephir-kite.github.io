@@ -7,6 +7,12 @@
 
 .u {
 
+  &__hide-mobile {
+    @include mobile {
+      display: none !important;
+    }
+  }
+
   &__flex {
     display: flex;
 
@@ -44,6 +50,7 @@
   }
 
   &__wrapper {
+    display: block;
     max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
@@ -87,10 +94,12 @@
   }
 
   &__skew {
-    transform: skewY(-7deg);
+    @include tablet {
+      transform: skewY(-7deg);
 
-    &--translate {
-      transform: skewY(-7deg) translateY(-5rem);
+      &--translate {
+        transform: skewY(-7deg) translateY(-5rem);
+      }
     }
   }
 
@@ -105,7 +114,9 @@
   }
 
   &__skew-child {
-    transform: skewY(7deg);
+    @include tablet {
+      transform: skewY(7deg);
+    }
   }
 
   &__box-shadow {

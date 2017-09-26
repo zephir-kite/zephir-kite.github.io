@@ -15,9 +15,38 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#181554">
 </head>
 <body>
+
+  <!-- <script>
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId: "132212237416382",
+        xfbml: true,
+        version: "v2.6"
+      });
+
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) { return; }
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+  </script>
+
+  <div class="fb-send-to-messenger" 
+    messenger_app_id="132212237416382" 
+    page_id="336269350152280" 
+    data-ref="PASS_THROUGH_PARAM" 
+    color="blue" 
+    size="large">
+  </div>  -->
 
   <header class="header">
     <div class="u__wrapper u__white u__pos--static">
@@ -47,12 +76,12 @@
     </div>
   </header>
   
-  <div class="u__wrapper">
+  <div class="u__wrapper u__hide-mobile">
     <div class="sign-up u__white u__z--2 u__translate--100">
       <h3>Get early access</h3>
       <p>We’ll message you first when Zephir is ready</p>
 
-      <button class="features__add-to-messenger features__add-to-messenger--inverse"><i class="features__messenger-icon features__messenger-icon--inverse"></i> Add to Messenger</button>
+      <a class="features__add-to-messenger features__add-to-messenger--inverse" href="https://m.me/getzephir"><i class="features__messenger-icon features__messenger-icon--inverse"></i> Add to Messenger</a>
     </div>
   </div>
   
@@ -67,7 +96,7 @@
           <h2>Find the nearest kiteable spot in seconds</h2>
           <p>Whether you're travelling or next to your home spot, always know where the wind is the best. Get the latest forecast to choose where to kite.</p>
 
-          <button class="features__add-to-messenger u__mt--60"><i class="features__messenger-icon features__messenger-icon"></i> Add to Messenger</button>
+          <a class="features__add-to-messenger u__mt--60" href="https://m.me/getzephir"><i class="features__messenger-icon features__messenger-icon"></i> Add to Messenger</a>
         </div>
       </div>
     </div>
@@ -80,7 +109,7 @@
             <h2>Get notified in advance of your next session</h2>
             <p>Automatically receive alerts whenever a spot close to you is open in the coming days. Eliminate the guesswork out of planning your next session!</p>
 
-            <button class="features__add-to-messenger features__add-to-messenger--light-green u__mt--60"><i class="features__messenger-icon"></i> Add to Messenger</button>
+            <a class="features__add-to-messenger features__add-to-messenger--light-green u__mt--60" href="https://m.me/getzephir"><i class="features__messenger-icon"></i> Add to Messenger</a>
           </div>
           <figure class="features__get-notified u__flex--bottom u__mb---75">
             <img src="dist/images/get-notified.png" width="400px" alt="Get notified whenever there's a spot raging close to you!">
@@ -89,7 +118,7 @@
       </div>
     </section>
 
-    <section class="features u__bg--white u__primary u__mt---100 u__pb--45 u__skew-overlay">
+    <section class="features u__bg--white u__primary u__mt---100 u__pb--45 u__skew-overlay u__z--3">
       <div class="u__wrapper u__wrapper--large">
         <div class="u__flex u__flex--space">
           <figure class="features__plan-your-session u__flex--bottom u__mb---45">
@@ -99,7 +128,7 @@
             <h2>Plan your session with friends, old &amp; new</h2>
             <p>Easily discuss meeting points and rideshare from within the app. Make friends if you're new to town, or get an additional member to your crew: the more the merrier!</p>
 
-            <button class="features__add-to-messenger u__mt--60"><i class="features__messenger-icon"></i> Add to Messenger</button>
+            <a class="features__add-to-messenger u__mt--60" href="https://m.me/getzephir"><i class="features__messenger-icon"></i> Add to Messenger</a>
           </div>
         </div>
       </div>
@@ -110,7 +139,7 @@
         <h3>Get early access</h3>
         <p>We’ll message you first when Zephir is ready</p>
         
-        <button class="features__add-to-messenger features__add-to-messenger--inverse"><i class="features__messenger-icon features__messenger-icon--inverse"></i> Add to Messenger</button>
+        <a class="features__add-to-messenger features__add-to-messenger--inverse" href="https://m.me/getzephir"><i class="features__messenger-icon features__messenger-icon--inverse"></i> Add to Messenger</a>
       </div>
       <div class="u__wrapper">
         <nav class="footer__links u__flex u__flex--space u__flex--bottom">

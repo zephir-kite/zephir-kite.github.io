@@ -13,7 +13,7 @@
   
   &__title {
     margin-top: 18rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
 
     @include tablet {
       margin-top: 8rem;
@@ -22,11 +22,13 @@
   }
 
   &__subtitle {
+    display: none;
     font-size: $content-fs;
     font-family: $main-ff;
     font-weight: normal;
 
     @include tablet {
+      display: block;
       visibility: hidden;
       margin-bottom: 3rem;
       max-width: 27rem;
@@ -60,10 +62,11 @@
   #dunes {
     transform: translateX(-32.5%);
     width: 750px;
-    margin-bottom: -4px;
+    margin-bottom: -40px;
 
     @include tablet {
       width: auto;
+      margin-bottom: -4px;
     }
   }
 

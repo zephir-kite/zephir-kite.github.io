@@ -54,7 +54,8 @@
 }
 
 .features {
-  padding: 7.5rem 0;
+  padding: 5rem 0;
+  position: relative;
 
   h2 {
     max-width: 35rem;
@@ -81,6 +82,7 @@
       margin-left: -5rem;
       margin-bottom: -7.5rem;
       width: 33rem;
+      opacity: .3;
     }
   }
 
@@ -103,8 +105,7 @@
     border: none;
     border-radius: 5px;
     color: $white;
-    cursor: pointer;
-    display: flex;
+    display: inline-flex;
     font-size: $content-fs;
     font-family: $main-ff;
     padding: .65rem 1.25rem;

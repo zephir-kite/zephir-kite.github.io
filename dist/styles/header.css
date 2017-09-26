@@ -9,17 +9,19 @@
   padding-top: 2rem; }
   .header__title {
     margin-top: 18rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 0rem; }
     @media (min-width: 768px) {
       .header__title {
         margin-top: 8rem;
         margin-bottom: 1.5rem; } }
   .header__subtitle {
+    display: none;
     font-size: 1.25rem;
     font-family: "Cabin", sans-serif;
     font-weight: normal; }
     @media (min-width: 768px) {
       .header__subtitle {
+        display: block;
         visibility: hidden;
         margin-bottom: 3rem;
         max-width: 27rem; } }
@@ -47,10 +49,11 @@
     -webkit-transform: translateX(-32.5%);
             transform: translateX(-32.5%);
     width: 750px;
-    margin-bottom: -4px; }
+    margin-bottom: -40px; }
     @media (min-width: 768px) {
       .header #dunes {
-        width: auto; } }
+        width: auto;
+        margin-bottom: -4px; } }
 
 @-webkit-keyframes fly {
   0% {
