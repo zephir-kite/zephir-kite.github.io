@@ -9,7 +9,7 @@
   padding-top: 2rem; }
   .header__title {
     margin-top: 18rem;
-    margin-bottom: 0rem; }
+    margin-bottom: 4rem; }
     @media (min-width: 768px) {
       .header__title {
         margin-top: 8rem;
@@ -40,16 +40,18 @@
     right: 4rem;
     -webkit-transform-origin: bottom left;
             transform-origin: bottom left;
-    top: 7rem; }
+    top: 8rem;
+    height: 7rem; }
     @media (min-width: 768px) {
       .header #kite {
         right: 250px;
-        top: 12rem; } }
+        top: 12rem;
+        height: auto; } }
   .header #dunes {
     -webkit-transform: translateX(-32.5%);
             transform: translateX(-32.5%);
     width: 750px;
-    margin-bottom: -40px; }
+    margin-bottom: -66px; }
     @media (min-width: 768px) {
       .header #dunes {
         width: auto;
