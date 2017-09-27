@@ -284,11 +284,10 @@ h1, h2 {
   .header #sun {
     position: absolute;
     top: -9.5rem;
-    right: -2.5rem; }
+    right: 0; }
     @media (min-width: 768px) {
       .header #sun {
-        top: 4.5rem;
-        right: 0; } }
+        top: 4.5rem; } }
   .header #kite {
     -webkit-animation: fly 6s infinite ease-in-out;
             animation: fly 6s infinite ease-in-out;

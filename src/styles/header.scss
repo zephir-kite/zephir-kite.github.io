@@ -38,11 +38,10 @@
   #sun {
     position: absolute;
     top: -9.5rem;
-    right: -2.5rem;
+    right: 0;
 
     @include tablet {
       top: 4.5rem;
-      right: 0;
     }
   }
 
