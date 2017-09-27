@@ -152,6 +152,10 @@
     &--60 {
       margin-top: 6rem;
     }
+
+    &--50 {
+      margin-top: 5rem;
+    }
   }
 
   &__mb {
@@ -163,12 +167,12 @@
   &__skew-overlay {
     &:before {
       content: "";
-      height: 7.5rem;
+      height: 10rem;
       transform: skewY(-7deg);
       background: $white;
       display: block;
       z-index: 3;
-      margin-top: -2.5rem;
+      margin-top: -10rem;
     }
   }
 

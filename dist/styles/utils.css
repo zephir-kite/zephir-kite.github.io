@@ -109,6 +109,9 @@
 .u__mt--60 {
   margin-top: 6rem; }
 
+.u__mt--50 {
+  margin-top: 5rem; }
+
 .u__mb---75 {
   margin-bottom: -7.5rem; }
 
@@ -120,10 +123,10 @@
 
 .u__skew-overlay:before {
   content: "";
-  height: 7.5rem;
+  height: 10rem;
   -webkit-transform: skewY(-7deg);
           transform: skewY(-7deg);
   background: #fafafa;
   display: block;
   z-index: 3;
-  margin-top: -2.5rem; }
+  margin-top: -10rem; }
