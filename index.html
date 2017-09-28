@@ -16,6 +16,10 @@
   <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#181554">
+  <script src="dist/scripts/main.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
 </head>
 <body>
 
@@ -53,8 +57,8 @@
       <nav class="u__flex u__flex--space">
         <a class="header__brand" href="//zephir.io">zephir</a>
         <div class="header__links u__flex--bottom">
-          <a href="#features">features</a>
-          <a href="#sign-up">early access</a>
+          <a href="#features" data-scroll>features</a>
+          <a href="#sign-up" data-scroll>early access</a>
         </div>
       </nav>
       <h1 class="header__title">A kiteboarder's new best friend &dash; <em>in a bot</em></h1>
@@ -86,7 +90,7 @@
     </div>
   </div>
   
-  <section class="features u__bg--white u__primary u__z--1 u__skew u__skew--translate u__box-shadow">
+  <section id="features" class="features u__bg--white u__primary u__z--1 u__skew u__skew--translate u__box-shadow">
     <div class="u__wrapper u__wrapper--large u__skew-child">
       <div class="u__flex u__flex--space u__flex--reverse-mobile u__full-width-mobile u__pt--50">
         <figure class="features__find-in-seconds u__flex--bottom u__mb---75">
@@ -136,7 +140,7 @@
       </div>
     </section>
 
-    <footer class="footer u__white">
+    <footer id="sign-up" class="footer u__white">
       <div class="sign-up u__pos--rel">
         <h3>Get early access</h3>
         <p>We’ll message you first when Zephir is ready</p>
