@@ -11,6 +11,11 @@
   z-index: 10;
   position: relative;
 
+  @include display {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+
   &__links {
     margin-top: 7rem;
     padding-bottom: 0.5rem;

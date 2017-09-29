@@ -8,6 +8,10 @@
   padding-top: 7rem;
   z-index: 10;
   position: relative; }
+  @media (min-width: 1600px) {
+    .footer {
+      padding-top: 3rem;
+      padding-bottom: 1rem; } }
   .footer__links {
     margin-top: 7rem;
     padding-bottom: 0.5rem;

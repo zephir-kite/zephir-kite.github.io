@@ -68,11 +68,19 @@
 
     &--large {
       max-width: 65rem;
+
+      @include display {
+        max-width: 70rem;
+      }
     }
 
     @include tablet {
       padding-left: 0;
       padding-right: 0;
+    }
+
+    @include display {
+      max-width: 70rem;
     }
   }
 
@@ -109,6 +117,14 @@
         transform: skewY(-7deg) translateY(-5rem);
       }
     }
+
+    @include display {
+      transform: none;
+
+      &--translate {
+        transform: none;
+      }
+    }
   }
 
   &__translate {
@@ -124,6 +140,10 @@
   &__skew-child {
     @include tablet {
       transform: skewY(7deg);
+    }
+
+    @include display {
+      transform: none;
     }
   }
 
@@ -190,6 +210,12 @@
         display: block;
         z-index: 3;
         margin-top: -10rem;
+      }
+    }
+
+    @include display {
+      &:before {
+        display: none;
       }
     }
   }
