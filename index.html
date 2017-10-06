@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Zephir - a kiteboarder's new best friend, in a bot</title>
+  <title>Zephir &mdash; a kiteboarder's new best friend, in a bot</title>
 
   <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,700|Playfair+Display:700" rel="stylesheet">
   <link href="dist/styles/style.min.css" rel="stylesheet" >
@@ -17,10 +17,19 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#181554">
 
-  <script src="dist/scripts/main.min.js"></script>
-  <script>
-    var scroll = new SmoothScroll('a[href*="#"]');
-  </script>
+  <meta property="og:url" content="http://www.zephir.io" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Zephir &mdash; a kiteboarder's new best friend, in a bot" />
+  <meta property="og:description" content="Zephir helps kiteboarders around the world find the best spots, be notified of favorable weather forecasts, and arrange kite trips with friends." />
+  <meta property="og:image" content="http://zephir.io/dist/images/cover-fb.png" />
+  <meta property="og:image:width" content="820" />
+  <meta property="og:image:height" content="462" />
+  <meta property="fb:app_id" content="132212237416382" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@proxyclick" />
+  <meta name="twitter:creator" content="@vincentghyssens" />
+
   <script>
     !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
     analytics.load("ec7Y0b1wOFgFNMRrNKBpjIcDHoh0GBbD");
@@ -29,6 +38,26 @@
 </script>
 </head>
 <body>
+
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '132212237416382',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <header class="header">
     <div class="u__wrapper u__white u__pos--static">
@@ -39,7 +68,7 @@
           <a href="#sign-up" data-scroll>early access</a>
         </div>
       </nav>
-      <h1 class="header__title">A kiteboarder's new best friend &dash; <em>in a bot</em></h1>
+      <h1 class="header__title">A kiteboarder's new best friend &mdash; <em>in a bot</em></h1>
       <h2 class="header__subtitle">Zephir finds and notifies you of the nearest kiteable spots, so you plan less and ride more</h2>
       <a class="features__add-to-messenger features__add-to-messenger--light-green u__mt---50 u__show-mobile" href="https://m.me/getzephir"><i class="features__messenger-icon features__messenger-icon"></i> Add to Messenger</a>
 
@@ -125,13 +154,27 @@
         
         <a class="features__add-to-messenger features__add-to-messenger--inverse" href="https://m.me/getzephir"><i class="features__messenger-icon features__messenger-icon--inverse"></i> Add to Messenger</a>
       </div>
+      <p class="footer__share">
+        Share on <a class="footer__share--twitter" href="https://twitter.com/intent/tweet?text=I%20just%20stumbled%20upon%20@getZephir,%20it%27s%20a%20bot%20for%20kiteboarders!%20Get%20started%20on%20www.zephir.io%20%F0%9F%8F%84%E2%80%8D%E2%99%82%EF%B8%8F">Twitter</a> 
+        and <a class="footer__share--facebook" href="https://facebook.com/getzephir">Facebook</a>!
+      </p>
       <div class="u__wrapper">
         <nav class="footer__links u__flex u__flex--space u__flex--bottom">
           <a class="footer__brand" href="//zephir.io">zephir.io</a>
-          <a href="mailto:hey@zephir.io">hey@zephir.io</a>
+          <div>
+            <a href="https://instagram.com/zephirkite"><i class="footer__social footer__social--instagram"></i></a>
+            <a href="https://facebook.com/getzephir"><i class="footer__social footer__social--facebook"></i></a>
+            <a href="https://twitter.com/getzephir"><i class="footer__social footer__social--twitter"></i></a>
+            <a href="mailto:hey@zephir.io">hey@zephir.io</a>
+          </div>
         </nav>
       </div>
     </footer>
+    
+    <script src="dist/scripts/main.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 
 </body>
 </html>

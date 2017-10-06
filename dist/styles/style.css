@@ -546,8 +546,15 @@ h1, h2 {
     .footer {
       padding-top: 3rem;
       padding-bottom: 1rem; } }
+  .footer__share {
+    text-align: center;
+    margin-top: 1rem; }
+    .footer__share a {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline; }
   .footer__links {
-    margin-top: 7rem;
+    margin-top: 5rem;
     padding-bottom: 0.5rem;
     font-size: 1.25rem; }
     .footer__links a {
@@ -556,6 +563,16 @@ h1, h2 {
     color: white;
     font-weight: bold;
     letter-spacing: -0.025rem; }
+  .footer__social {
+    height: 1rem;
+    margin-bottom: -.125rem;
+    margin-right: .25rem; }
+    .footer__social--instagram {
+      content: url(../images/instagram.svg); }
+    .footer__social--facebook {
+      content: url(../images/facebook.svg); }
+    .footer__social--twitter {
+      content: url(../images/twitter.svg); }
   .footer .sign-up:after {
     box-shadow: 0 0 65px 0 #37C7BA;
     border-radius: 5px;

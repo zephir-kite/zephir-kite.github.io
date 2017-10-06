@@ -25,4 +25,22 @@ document.addEventListener("DOMContentLoaded", function() {
     analytics.track("click-cta-footer");
   });
 
+  var shareFB = document.getElementsByClassName('footer__share--facebook');
+
+  shareFB[0].addEventListener('click', function(e) {
+    e.preventDefault();
+
+    analytics.track("share-facebook");
+    FB.ui({
+      method: 'share',
+      href: 'http://www.zephir.io',
+    });
+  });
+
+  var shareTW = document.getElementsByClassName('footer__share--twitter');
+
+  shareTW[0].addEventListener('click', function() {
+    analytics.track("share-twitter");
+  });
+
 });
